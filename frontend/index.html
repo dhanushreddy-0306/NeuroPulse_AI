@@ -308,7 +308,7 @@
       const formData = new FormData();
       formData.append("file", fileInput.files[0]);
 
-      const apiCallPromise = fetch("http://127.0.0.1:5000/predict", {
+      const apiCallPromise = fetch("https://neuropulse-ai.onrender.com/predict", {
         method: "POST",
         body: formData
       }).then(r => r.json());
